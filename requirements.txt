@@ -1,0 +1,8 @@
+# --- core dependencies ---
+pytest==9.0.1          # primary testing framework
+pytest-xdist           # run tests paralelly (pytest -n auto)
+pytest-html            # generates HTML report (pytest --html=report.html)
+
+# --- code quality ---
+mypy                   # checks types (ProcessResult vs int ..)
+black                  # automatic code formatter
