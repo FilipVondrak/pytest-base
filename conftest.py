@@ -41,7 +41,7 @@ def run_binary(binary_path) -> BinaryRunner:
         # convert relative paths to absolute paths
         input_path = Path(input_file)
         if not input_path.is_absolute():
-            input_file = str((TEST_ROOT.parent / input_file).resolve())
+            input_file = str((TEST_ROOT / input_file).resolve())
         # return the raw run_binary function
         return raw_run_binary(binary_path, input_file, args)
 
